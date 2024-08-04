@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap");
+
+.nav-container {
+  background-color: #2a3950;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  flex-wrap: wrap;
+  
+}
+
+.nav-container h1 a {
+  font-family: "Racing Sans One", sans-serif;
+  font-weight: 400;
+  font-size: 25.6px;
+  color: #d9d9d9;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  font-size: 19.2px;
+}
+
+.nav-list ul {
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-list li {
+  cursor: pointer;
+}
+
+.nav-list li a {
+  text-align: center;
+  text-decoration: none;
+  color: #d9d9d9;
+  transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  color: aquamarine;
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background: #d9d9d9;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.bar.open:nth-child(1) {
+  transform: rotate(-45deg) translate(-7px, 8px);
+}
+
+.bar.open:nth-child(2) {
+  opacity: 0;
+}
+
+.bar.open:nth-child(3) {
+  transform: rotate(45deg) translate(-7px, -8px);
+}
+
+
+@media (max-width: 768px) {
+  .nav-container {
+    /* flex-direction: column; */
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .nav-container h1 {
+    margin: 0;
+  }
+
+  .nav-list {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-list ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-list.open {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-list ul {
+    gap: 15px;
+  }
+
+  .nav-container h1 {
+    font-size: 22px;
+  }
+
+  .nav-list {
+    font-size: 18px;
+  }
+}

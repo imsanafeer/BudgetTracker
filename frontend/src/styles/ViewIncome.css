@@ -1,0 +1,117 @@
+.viewincome-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.viewincome-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.viewincome-title h2 {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.addincome-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.addincome-btn button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addincome-btn button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.addincome-btn button:hover {
+  background-color: #0056b3;
+}
+
+.addincome-btn button svg {
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+
+.viewincome-content {
+  width: 100%;
+}
+
+.income-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.income-list h3 {
+  font-size: 1rem;
+  margin: 0;
+  flex: 1;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+.income-actions {
+  display: flex;
+  align-items: center;
+}
+
+.income-actions h3 {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.income-actions h3:hover {
+  background-color: #f0f0f0;
+}
+
+
+@media (max-width: 768px) {
+  .viewincome-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .addincome-btn {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .viewincome-title h2 {
+    font-size: 1.25rem;
+  }
+
+  .addincome-btn button {
+    font-size: 0.75rem;
+    padding: 0.5rem;
+  }
+}

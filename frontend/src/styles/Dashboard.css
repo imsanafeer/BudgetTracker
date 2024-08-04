@@ -1,0 +1,123 @@
+.dashboard-container {
+  padding: 20px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.dashboard-title h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.dashboard-sub {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.summary, .spending-breakdown {
+  background-color: #ffffff;
+  color: #333;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.summary-item, .spending-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin: 10px 0;
+  transition: background-color 0.3s;
+}
+
+.summary-item:hover, .spending-stat:hover {
+  background-color: #eef;
+}
+
+.income-summary {
+  border-left: 5px solid #4caf50;
+}
+
+.spending-summary {
+  border-left: 5px solid #ffeb3b;
+}
+
+.spare-cash {
+  border-left: 5px solid #2196f3;
+}
+
+.spare-cashred {
+  border-left: 5px solid #f44336;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #34495e;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 300;
+  color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+  .dashboard-sub {
+    grid-template-columns: 1fr;
+  }
+
+  .summary, .spending-breakdown {
+    margin-bottom: 20px;
+  }
+
+  .summary-item, .spending-stat {
+    padding: 15px;
+  }
+}
+
+.positive-budget {
+  color: green;
+  font-size: 18px;
+  text-align: center;
+  background-color: #e8f5e9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+
+.negative-budget {
+  color: #ff0000;
+  font-size: 18px;
+  text-align: center;
+  background-color: #ffebee;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 50px;
+
+}
+
+.neutral-budget {
+  font-size: 18px;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 50px;
+
+}
