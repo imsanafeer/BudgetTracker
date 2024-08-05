@@ -55,6 +55,7 @@ const AddExpense = () => {
               id="title"
               name="title"
               required
+              maxLength="10"
               value={expenseName}
               onChange={(e) => setExpenseName(e.target.value)}
             />
@@ -66,6 +67,7 @@ const AddExpense = () => {
               id="amount"
               name="amount"
               required
+              maxLength="9"
               value={expenseAmount}
               onChange={(e) => setExpenseAmount(e.target.value)}
             />
