@@ -49,6 +49,7 @@ const AddIncome = () => {
               id="title"
               name="title"
               required
+              maxLength="10"
               value={incomeName}
               onChange={(e) => setIncomeName(e.target.value)}
             />
@@ -60,6 +61,7 @@ const AddIncome = () => {
               id="amount"
               name="amount"
               required
+              maxLength="8"
               value={incomeAmount}
               onChange={(e) => setIncomeAmount(e.target.value)}
             />
