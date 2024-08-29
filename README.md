@@ -15,7 +15,7 @@ In the command line enter the following command
 ### Clone the repository:
 
 ```bash
-git clone https://github.com/imsanafeer/Widget-Dashboard.git
+git clone https://github.com/imsanafeer/BudgetTracker.git
 ```
 ### Navigate to the backend directory:
 ```bash
