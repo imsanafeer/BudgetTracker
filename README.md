@@ -1,6 +1,6 @@
 # Budget Tracker
 
-The Budget Tracker is a web application designed to help users manage their finances by tracking income, expenses, and budgets. This project is built using the MERN stack, which includes MongoDB, Express.js, React.js, and Node.js. 
+The Budget Tracker is a web application designed to help users manage their finances by tracking income, expenses, and budgets. This project is built using the MERN stack, which includes MongoDB, Express.js, React.js, and Node.js. This application can be viewed at https://budgettracker-sanafeer.vercel.app/
 
 ## Installation
 
@@ -65,19 +65,11 @@ npm start
 Open http://localhost:3000 in your browser to see the app.
 The backend server will be running on http://localhost:5000
 
-## Available Scripts
-In the project directory, you can run the following commands:
-
-**npm run dev**: Starts the development server.  
-**npm run build**: Bundles the app into static files for production.  
-**npm run serve**: Serves the production build locally.  
-**npm run format**: Formats the code using Prettier.  
-
 ## Technologies Used
-**React.js**: JavaScript library for building user interfaces.  
-**Node.js**: For server side scripting. 
-**Express.js**: Back end web application framework for building RESTful APIs with Node.js.  
-**MongoDB**: Used as the database.  
+**React.js**: JavaScript library for building user interfaces.    
+**Node.js**: For server side scripting.  
+**Express.js**: Back end web application framework for building RESTful APIs with Node.js.   
+**MongoDB**: Used as the database.    
 
 ## Contributing
 If you'd like to contribute to this project, please fork the repository and create a pull request with your changes. Feel free to open issues for suggestions or bug reports.
